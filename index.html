@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Network - Protect Earth</title>
+    <title>Nexus AI - Shaping Tomorrow</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,12 +14,12 @@
         }
 
         :root {
-            --primary: #2e7d32;
-            --secondary: #4caf50;
-            --accent: #8bc34a;
-            --light: #e8f5e9;
-            --dark: #1b5e20;
-            --text: #333333;
+            --primary: #0d47a1;
+            --secondary: #1976d2;
+            --accent: #00e5ff;
+            --light: #f0f4f8;
+            --dark: #001f3f;
+            --text: #2c3e50;
             --white: #ffffff;
         }
 
@@ -36,7 +36,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
         }
 
         .container {
@@ -61,6 +61,7 @@
 
         .logo i {
             font-size: 2rem;
+            color: var(--accent);
         }
 
         nav ul {
@@ -101,7 +102,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1677442135722-5f11f0b63fcf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -119,7 +120,7 @@
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
         .hero p {
@@ -130,7 +131,7 @@
         .btn {
             display: inline-block;
             background-color: var(--accent);
-            color: var(--white);
+            color: var(--dark);
             padding: 0.8rem 2rem;
             border-radius: 50px;
             text-decoration: none;
@@ -138,13 +139,13 @@
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .btn:hover {
-            background-color: var(--primary);
+            background-color: #00b8d4;
             transform: translateY(-3px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         section {
@@ -172,14 +173,8 @@
             transform: translateX(-50%);
             width: 80px;
             height: 4px;
-            background-color: var(--accent);
+            background: linear-gradient(to right, var(--accent), #7c4dff);
             border-radius: 2px;
-        }
-
-        .section-title p {
-            color: var(--text);
-            max-width: 700px;
-            margin: 0 auto;
         }
 
         .about-content {
@@ -192,7 +187,7 @@
         .about-img {
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         .about-img img {
@@ -212,10 +207,6 @@
             color: var(--dark);
         }
 
-        .about-text p {
-            margin-bottom: 1.5rem;
-        }
-
         .stats {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -228,7 +219,7 @@
             padding: 2rem 1rem;
             background-color: var(--white);
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
         }
 
@@ -238,74 +229,55 @@
 
         .stat-item i {
             font-size: 2.5rem;
-            color: var(--primary);
+            color: var(--secondary);
             margin-bottom: 1rem;
         }
 
         .stat-item h3 {
             font-size: 2.5rem;
-            color: var(--dark);
+            color: var(--primary);
             margin-bottom: 0.5rem;
         }
 
-        .stat-item p {
-            color: var(--text);
-        }
-
-        .initiatives {
-            background-color: var(--white);
-        }
-
-        .initiatives-grid {
+        .solutions-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
-        .initiative-card {
-            background-color: var(--light);
-            border-radius: 10px;
+        .solution-card {
+            background-color: var(--white);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent);
         }
 
-        .initiative-card:hover {
-            transform: translateY(-10px);
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
-        .initiative-img {
-            height: 200px;
-            overflow: hidden;
+        .card-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin: 1.5rem 0;
+            text-align: center;
         }
 
-        .initiative-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
+        .card-content {
+            padding: 0 1.5rem 1.5rem;
         }
 
-        .initiative-card:hover .initiative-img img {
-            transform: scale(1.1);
-        }
-
-        .initiative-content {
-            padding: 1.5rem;
-        }
-
-        .initiative-content h3 {
-            font-size: 1.5rem;
+        .card-content h3 {
+            font-size: 1.4rem;
             margin-bottom: 1rem;
             color: var(--dark);
         }
 
-        .initiative-content p {
-            margin-bottom: 1.5rem;
-        }
-
         .cta {
-            background: linear-gradient(to right, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), #4a148c);
             color: var(--white);
             text-align: center;
             padding: 5rem 0;
@@ -325,13 +297,12 @@
         }
 
         .cta .btn {
-            background-color: var(--white);
-            color: var(--primary);
+            background-color: var(--accent);
+            color: var(--dark);
         }
 
         .cta .btn:hover {
-            background-color: var(--accent);
-            color: var(--white);
+            background-color: #00b8d4;
         }
 
         footer {
@@ -364,21 +335,8 @@
             background-color: var(--accent);
         }
 
-        .footer-column p {
-            margin-bottom: 1rem;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.8rem;
-        }
-
         .footer-links li a {
-            color: var(--light);
-            text-decoration: none;
+            color: #bbb;
             transition: all 0.3s ease;
         }
 
@@ -387,27 +345,13 @@
             padding-left: 5px;
         }
 
-        .social-links {
-            display: flex;
-            gap: 1rem;
-        }
-
         .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
             background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: var(--white);
-            text-decoration: none;
-            transition: all 0.3s ease;
         }
 
         .social-links a:hover {
             background-color: var(--accent);
-            transform: translateY(-5px);
+            color: var(--dark);
         }
 
         .copyright {
@@ -420,75 +364,38 @@
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
+            color: white;
         }
 
         @media (max-width: 992px) {
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .initiatives-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .about-content { grid-template-columns: 1fr; }
+            .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-content { grid-template-columns: repeat(2, 1fr); }
+            .stats { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
+            .hero h1 { font-size: 2.3rem; }
             nav ul {
                 display: none;
                 position: absolute;
                 top: 100%;
                 left: 0;
                 width: 100%;
-                background-color: var(--primary);
+                background: var(--primary);
                 flex-direction: column;
                 padding: 1rem 0;
                 text-align: center;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             }
-            
-            nav ul.active {
-                display: flex;
-            }
-            
-            nav ul li {
-                margin: 0;
-                padding: 0.8rem 0;
-            }
-            
-            .mobile-menu {
-                display: block;
-            }
-            
-            .initiatives-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats {
-                grid-template-columns: 1fr;
-            }
+            nav ul.active { display: flex; }
+            nav ul li { margin: 0; padding: 0.8rem 0; }
+            .mobile-menu { display: block; }
+            .solutions-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: 1fr; }
         }
 
-        /* Animation for stats counter */
         .counter {
             transition: all 0.5s ease;
         }
@@ -499,8 +406,8 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Green Network</span>
+                <i class="fas fa-brain"></i>
+                <span>Nexus AI</span>
             </div>
             <nav>
                 <div class="mobile-menu">
@@ -509,8 +416,8 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#initiatives">Initiatives</a></li>
-                    <li><a href="#get-involved">Get Involved</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#get-started">Get Started</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -520,9 +427,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Protect Our Planet, Preserve Our Future</h1>
-            <p>Join the global movement to create a sustainable world through conservation, education, and community action.</p>
-            <a href="#get-involved" class="btn">Join Our Network</a>
+            <h1>Empowering the Future with Artificial Intelligence</h1>
+            <p>Build smarter systems, automate complex tasks, and unlock innovation with cutting-edge AI solutions.</p>
+            <a href="#get-started" class="btn">Explore Solutions</a>
         </div>
     </section>
 
@@ -530,82 +437,79 @@
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Green Network</h2>
-                <p>We are a global community dedicated to environmental protection and sustainable development.</p>
+                <h2>About Nexus AI</h2>
+                <p>We pioneer ethical, scalable AI technologies for businesses and researchers worldwide.</p>
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="AI Development Team">
                 </div>
                 <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>Green Network is committed to creating a sustainable future by protecting natural ecosystems, promoting renewable energy, and empowering communities to take environmental action.</p>
-                    <p>Founded in 2010, we've grown from a small grassroots organization to an international network with over 50,000 members across 120 countries.</p>
-                    <p>Our approach combines scientific research, community engagement, and policy advocacy to address the most pressing environmental challenges of our time.</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <h3>Our Vision</h3>
+                    <p>Nexus AI was founded in 2018 to bridge the gap between theoretical AI research and real-world applications. We believe technology should serve humanity — responsibly and inclusively.</p>
+                    <p>Today, our platform powers over 10,000 developers across healthcare, finance, and climate science.</p>
+                    <p>All our models are open-weight, auditable, and designed with privacy-first principles.</p>
+                    <a href="#" class="btn">Read Our Whitepaper</a>
                 </div>
             </div>
             <div class="stats">
                 <div class="stat-item">
-                    <i class="fas fa-tree"></i>
-                    <h3 class="counter" data-target="2500000">0</h3>
-                    <p>Trees Planted</p>
+                    <i class="fas fa-microchip"></i>
+                    <h3 class="counter" data-target="250">0</h3>
+                    <p>AI Models</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <h3 class="counter" data-target="50000">0</h3>
-                    <p>Active Members</p>
+                    <i class="fas fa-user-friends"></i>
+                    <h3 class="counter" data-target="10000">0</h3>
+                    <p>Developers</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-globe-americas"></i>
-                    <h3 class="counter" data-target="120">0</h3>
-                    <p>Countries Reached</p>
+                    <i class="fas fa-globe"></i>
+                    <h3 class="counter" data-target="85">0</h3>
+                    <p>Countries</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-recycle"></i>
-                    <h3 class="counter" data-target="1500">0</h3>
-                    <p>Cleanup Projects</p>
+                    <i class="fas fa-code"></i>
+                    <h3 class="counter" data-target="500">0</h3>
+                    <p>Open APIs</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Initiatives Section -->
-    <section class="initiatives" id="initiatives">
+    <!-- Solutions Section -->
+    <section class="initiatives" id="solutions">
         <div class="container">
             <div class="section-title">
-                <h2>Our Initiatives</h2>
-                <p>Discover the key programs and projects we're implementing to protect our planet.</p>
+                <h2>AI Solutions</h2>
+                <p>Scalable, secure, and ready to integrate into your workflow.</p>
             </div>
-            <div class="initiatives-grid">
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://dialogue.earth/content/uploads/2021/04/lessons-from-the-rush-to-reforest-china-dialogue-2400x1599.jpg" alt="Reforestation">
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fas fa-language"></i>
                     </div>
-                    <div class="initiative-content">
-                        <h3>Global Reforestation</h3>
-                        <p>Planting millions of trees worldwide to restore ecosystems, combat climate change, and protect biodiversity.</p>
-                        <a href="#" class="btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
-                    </div>
-                    <div class="initiative-content">
-                        <h3>Ocean Conservation</h3>
-                        <p>Protecting marine ecosystems, reducing plastic pollution, and promoting sustainable fishing practices.</p>
-                        <a href="#" class="btn">Learn More</a>
+                    <div class="card-content">
+                        <h3>Natural Language AI</h3>
+                        <p>Understand, generate, and translate human language with state-of-the-art LLMs.</p>
                     </div>
                 </div>
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
                     </div>
-                    <div class="initiative-content">
-                        <h3>Renewable Energy</h3>
-                        <p>Promoting solar, wind, and other clean energy sources to reduce dependence on fossil fuels.</p>
-                        <a href="#" class="btn">Learn More</a>
+                    <div class="card-content">
+                        <h3>Computer Vision</h3>
+                        <p>Detect objects, analyze scenes, and interpret visual data in real time.</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Predictive Analytics</h3>
+                        <p>Forecast trends, detect anomalies, and optimize decisions with machine learning.</p>
                     </div>
                 </div>
             </div>
@@ -613,11 +517,11 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta" id="get-involved">
+    <section class="cta" id="get-started">
         <div class="container">
-            <h2>Join Our Global Movement</h2>
-            <p>Together, we can create a sustainable future for generations to come. Every action counts, no matter how small.</p>
-            <a href="#" class="btn">Become a Member</a>
+            <h2>Start Building with AI Today</h2>
+            <p>Access our developer portal, documentation, and sandbox environment — free forever for individuals.</p>
+            <a href="#" class="btn">Get API Key</a>
         </div>
     </section>
 
@@ -626,97 +530,88 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Network</h3>
-                    <p>We are dedicated to protecting our planet through collaborative action, education, and sustainable solutions.</p>
+                    <h3>Nexus AI</h3>
+                    <p>Building the future of responsible artificial intelligence, one line of code at a time.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>Navigation</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#initiatives">Initiatives</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#get-started">Developer Hub</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Our Programs</h3>
+                    <h3>Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Reforestation</a></li>
-                        <li><a href="#">Ocean Cleanup</a></li>
-                        <li><a href="#">Wildlife Protection</a></li>
-                        <li><a href="#">Climate Education</a></li>
-                        <li><a href="#">Sustainable Agriculture</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Ethics Charter</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Copper Creek Drive, New York</p>
-                    <p><i class="fas fa-phone"></i> +1 (312) 171-0771</p>
-                    <p><i class="fas fa-envelope"></i> support@greennetwork.org</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Silicon Valley, CA</p>
+                    <p><i class="fas fa-envelope"></i> hello@nexusai.dev</p>
+                    <p><i class="fas fa-lock"></i> PGP: nexusai.dev/pgp</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Green Network. All rights reserved.</p>
+                <p>&copy; 2026 Nexus AI. Open Source. Ethical by Design.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile Menu Toggle
         document.querySelector('.mobile-menu').addEventListener('click', function() {
             document.querySelector('nav ul').classList.toggle('active');
         });
 
-        // Counter Animation
         function animateCounters() {
             const counters = document.querySelectorAll('.counter');
-            const speed = 200; // The lower the slower
+            const speed = 150;
             
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target');
                 const count = +counter.innerText;
-                
                 const inc = target / speed;
                 
-                if(count < target) {
+                if (count < target) {
                     counter.innerText = Math.ceil(count + inc);
-                    setTimeout(animateCounters, 1);
+                    setTimeout(animateCounters, 10);
                 } else {
                     counter.innerText = target;
                 }
             });
         }
 
-        // Initialize counters when page loads
         window.addEventListener('load', animateCounters);
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
+                if (targetId === '#') return;
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
                     document.querySelector('nav ul').classList.remove('active');
                 }
             });
         });
     </script>
 </body>
-
 </html>
